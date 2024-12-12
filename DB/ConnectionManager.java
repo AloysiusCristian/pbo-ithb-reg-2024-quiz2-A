@@ -9,7 +9,7 @@ public class ConnectionManager {
 
     private static Connection con;
     private static String driver = "com.mysql.cj.jdbc.Driver";
-    private static String url = "jdbc:mysql://localhost/test";
+    private static String url = "jdbc:mysql://localhost/Quiz2_PBO_reg_2024_NIM";
     private static String username = "root";
     private static String password = "";
 
@@ -39,7 +39,6 @@ public class ConnectionManager {
         if(con == null){
             con = logOn();
         }
-        JOptionPane.showMessageDialog(null, "Login Berhasil");
         return con;
     }
 
